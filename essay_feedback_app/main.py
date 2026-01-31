@@ -9,7 +9,7 @@ load_dotenv()
 # 2. API 키 불러오기 및 클라이언트 설정
 api_key = os.getenv("OPENAI_API_KEY")
 
-# API 키가 없는 경우 에러 처리 (선택 사항)
+# API 키가 없는 경우 에러 처리
 if not api_key:
     st.error("OPENAI_API_KEY가 설정되지 않았습니다. .env 파일을 확인해주세요.")
     st.stop()
